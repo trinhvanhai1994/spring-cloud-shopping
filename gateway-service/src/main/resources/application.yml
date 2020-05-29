@@ -16,19 +16,19 @@ zuul:
   #prefix: /api
   # The ignoredServices disable accessing services using service name
   # with these they should be only accessed through the path we defined below.
-  ignoredServices: '*'
+#  ignoredServices: '*'
   routes:
-  product-service:
-    path: /products/**
-    service-id: product-service
-  order-service:
-    path: /orders/**
-    service-id: order-service
-  auth-service:
-    path: /authentication/**
-    service-id: auth-service
-    strip-prefix: true
-    sensitive-headers: Cookie,Set-Cookie
+  cart-service:
+    path: /carts/**
+    service-id: cart-service
+##  order-service:
+##    path: /orders/**
+##    service-id: order-service
+#  auth-service:
+#    path: /authentication/**
+#    service-id: auth-service
+#    strip-prefix: true
+#    sensitive-headers: Cookie,Set-Cookie
 ribbon:
   ConnectTimeout: 1000
   ReadTimeout: 3000
