@@ -1,24 +1,24 @@
 package com.ominext.customer.service.impl;
 
+import com.ominext.common.model.request.CustomerRequest;
+import com.ominext.common.model.response.CustomerResponse;
 import com.ominext.customer.entity.Customer;
-import com.ominext.customer.payload.request.CustomerRequest;
-import com.ominext.customer.payload.response.CustomerResponse;
+import com.ominext.customer.repository.CustomerRepository;
 import com.ominext.customer.service.CustomerService;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
-//    @Autowired
-//    private final CustomerRepository repository;
+    private final CustomerRepository repository;
 
-//    public CustomerServiceImpl(CustomerRepository repository) {
-////        this.repository = repository;
-//    }
+    public CustomerServiceImpl(CustomerRepository repository) {
+        this.repository = repository;
+    }
 
     @Override
     public CustomerResponse getById(Long id) {
-//        return repository.findById(id).orElse(null);
+        repository.findById(id).orElse(null);
         CustomerResponse response = new CustomerResponse();
         response.setId(id);
         response.setUsername("pick");

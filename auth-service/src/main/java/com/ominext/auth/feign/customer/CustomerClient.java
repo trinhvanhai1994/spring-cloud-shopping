@@ -1,7 +1,7 @@
 package com.ominext.auth.feign.customer;
 
-import com.ominext.auth.payload.request.CustomerRequest;
-import com.ominext.auth.payload.response.CustomerResponse;
+import com.ominext.common.model.request.CustomerRequest;
+import com.ominext.common.model.response.CustomerResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -18,9 +18,9 @@ import com.ominext.common.security.JwtConfig;
 
 @EnableWebSecurity 	// Enable security config. This annotation denotes config for spring security.
 public class SecurityCredentialsConfig extends WebSecurityConfigurerAdapter {
-	
-	@Autowired
-	private UserDetailsService userDetailsService;
+//
+//	@Autowired
+//	private UserDetailsService userDetailsService;
 
 	@Autowired
 	private JwtConfig jwtConfig;

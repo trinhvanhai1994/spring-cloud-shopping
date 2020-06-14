@@ -1,7 +1,7 @@
 package com.ominext.auth.security;
 
 import com.ominext.auth.feign.customer.CustomerClient;
-import com.ominext.auth.payload.response.CustomerResponse;
+import com.ominext.common.model.response.CustomerResponse;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;

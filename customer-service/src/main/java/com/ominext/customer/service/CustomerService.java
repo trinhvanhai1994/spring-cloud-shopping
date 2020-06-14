@@ -1,7 +1,7 @@
 package com.ominext.customer.service;
 
-import com.ominext.customer.payload.request.CustomerRequest;
-import com.ominext.customer.payload.response.CustomerResponse;
+import com.ominext.common.model.request.CustomerRequest;
+import com.ominext.common.model.response.CustomerResponse;
 
 public interface CustomerService {
     CustomerResponse getById(Long id);

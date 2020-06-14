@@ -9,7 +9,6 @@
 	<packaging>jar</packaging>
 
 	<name>gateway-service</name>
-	<description>Demo project for Spring Boot Cloud</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

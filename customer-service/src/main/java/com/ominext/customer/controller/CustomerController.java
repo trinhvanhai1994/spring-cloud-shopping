@@ -1,7 +1,7 @@
 package com.ominext.customer.controller;
 
-import com.ominext.customer.payload.request.CustomerRequest;
-import com.ominext.customer.payload.response.CustomerResponse;
+import com.ominext.common.model.request.CustomerRequest;
+import com.ominext.common.model.response.CustomerResponse;
 import com.ominext.customer.service.CustomerService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
