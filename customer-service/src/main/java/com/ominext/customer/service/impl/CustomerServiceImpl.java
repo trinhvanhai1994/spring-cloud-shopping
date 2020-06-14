@@ -10,15 +10,15 @@ import org.springframework.stereotype.Service;
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
-    private final CustomerRepository repository;
+    private final CustomerRepository customerRepository;
 
-    public CustomerServiceImpl(CustomerRepository repository) {
-        this.repository = repository;
+    public CustomerServiceImpl(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
     }
 
     @Override
     public CustomerResponse getById(Long id) {
-        repository.findById(id).orElse(null);
+        customerRepository.findById(id).orElse(null);
         CustomerResponse response = new CustomerResponse();
         response.setId(id);
         response.setUsername("pick");
